@@ -38,7 +38,9 @@
         return;
     }
     
-    buffer.completeBuffer = handledString;
+    // use lines property instead of completeBuffer, because completeBuffer will crash when run in Xcode 8.x
+    [buffer.lines removeAllObjects];
+    [buffer.lines addObjectsFromArray:[handledString componentsSeparatedByString:@"\n"]];
     
     completionHandler(nil);
     
