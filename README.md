@@ -2,6 +2,14 @@
 
 A Powerful Command Line &amp; GUI App for Improve Your Develop Working.
 
+## Usage
+
+1. Open a json file whit Xcode
+2. Go to `Editor` > `JSONTools` > `Prettity JSON`
+3. Done. Enjoy it! 🍺
+
+![Prettity JSON](Screenshot/JSONTools.PrettityJSON.gif)
+
 ## Installation
 
 1. Download [ARToolChain.pkg](https://github.com/yanzhiwei147/ARToolChain/releases)(Choose the latest version).
