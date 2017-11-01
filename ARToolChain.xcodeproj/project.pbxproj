@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833EFA531FAA1E15003ABD5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834E738C1F90CE1600588E6E /* Cocoa.framework */; };
+		833EFA591FAA1E15003ABD5E /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 833EFA581FAA1E15003ABD5E /* SourceEditorExtension.m */; };
+		833EFA5C1FAA1E15003ABD5E /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 833EFA5B1FAA1E15003ABD5E /* SourceEditorCommand.m */; };
+		833EFA601FAA1E15003ABD5E /* ClangFormat.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 833EFA521FAA1E14003ABD5E /* ClangFormat.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		834E73351F90B0C000588E6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 834E73341F90B0C000588E6E /* AppDelegate.m */; };
 		834E73381F90B0C000588E6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834E73371F90B0C000588E6E /* ViewController.m */; };
 		834E733A1F90B0C000588E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834E73391F90B0C000588E6E /* Assets.xcassets */; };
@@ -35,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		833EFA5E1FAA1E15003ABD5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 834E73281F90B0C000588E6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 833EFA511FAA1E14003ABD5E;
+			remoteInfo = ClangFormat;
+		};
 		834E73471F90B0C100588E6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 834E73281F90B0C000588E6E /* Project object */;
@@ -84,6 +95,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				836695771F9451FD00069CB7 /* JSONTools.appex in Embed App Extensions */,
+				833EFA601FAA1E15003ABD5E /* ClangFormat.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +103,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		833EFA521FAA1E14003ABD5E /* ClangFormat.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClangFormat.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		833EFA561FAA1E15003ABD5E /* ClangFormat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClangFormat.entitlements; sourceTree = "<group>"; };
+		833EFA571FAA1E15003ABD5E /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		833EFA581FAA1E15003ABD5E /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		833EFA5A1FAA1E15003ABD5E /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		833EFA5B1FAA1E15003ABD5E /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		833EFA5D1FAA1E15003ABD5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		834E73301F90B0C000588E6E /* ARToolChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARToolChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834E73331F90B0C000588E6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		834E73341F90B0C000588E6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,6 +152,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		833EFA4F1FAA1E14003ABD5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833EFA531FAA1E15003ABD5E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		834E732D1F90B0C000588E6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +202,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		833EFA541FAA1E15003ABD5E /* ClangFormat */ = {
+			isa = PBXGroup;
+			children = (
+				833EFA571FAA1E15003ABD5E /* SourceEditorExtension.h */,
+				833EFA581FAA1E15003ABD5E /* SourceEditorExtension.m */,
+				833EFA5A1FAA1E15003ABD5E /* SourceEditorCommand.h */,
+				833EFA5B1FAA1E15003ABD5E /* SourceEditorCommand.m */,
+				833EFA5D1FAA1E15003ABD5E /* Info.plist */,
+				833EFA551FAA1E15003ABD5E /* Supporting Files */,
+			);
+			path = ClangFormat;
+			sourceTree = "<group>";
+		};
+		833EFA551FAA1E15003ABD5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				833EFA561FAA1E15003ABD5E /* ClangFormat.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		834E73271F90B0C000588E6E = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +231,7 @@
 				834E735B1F90B0F000588E6E /* ARCoreFoundation */,
 				834E73681F90B0F000588E6E /* ARCoreFoundationTests */,
 				8366956C1F9451FC00069CB7 /* JSONTools */,
+				833EFA541FAA1E15003ABD5E /* ClangFormat */,
 				834E738B1F90CE1600588E6E /* Frameworks */,
 				834E73311F90B0C000588E6E /* Products */,
 			);
@@ -196,6 +245,7 @@
 				834E735A1F90B0F000588E6E /* ARCoreFoundation.framework */,
 				834E73621F90B0F000588E6E /* ARCoreFoundationTests.xctest */,
 				8366956A1F9451FC00069CB7 /* JSONTools.appex */,
+				833EFA521FAA1E14003ABD5E /* ClangFormat.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -334,6 +384,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		833EFA511FAA1E14003ABD5E /* ClangFormat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 833EFA631FAA1E15003ABD5E /* Build configuration list for PBXNativeTarget "ClangFormat" */;
+			buildPhases = (
+				833EFA4E1FAA1E14003ABD5E /* Sources */,
+				833EFA4F1FAA1E14003ABD5E /* Frameworks */,
+				833EFA501FAA1E14003ABD5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClangFormat;
+			productName = ClangFormat;
+			productReference = 833EFA521FAA1E14003ABD5E /* ClangFormat.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 		834E732F1F90B0C000588E6E /* ARToolChain */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 834E734F1F90B0C100588E6E /* Build configuration list for PBXNativeTarget "ARToolChain" */;
@@ -349,6 +416,7 @@
 			dependencies = (
 				834E736E1F90B0F000588E6E /* PBXTargetDependency */,
 				836695761F9451FD00069CB7 /* PBXTargetDependency */,
+				833EFA5F1FAA1E15003ABD5E /* PBXTargetDependency */,
 			);
 			name = ARToolChain;
 			productName = ARToolChain;
@@ -435,6 +503,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = arida;
 				TargetAttributes = {
+					833EFA511FAA1E14003ABD5E = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 					834E732F1F90B0C000588E6E = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -477,11 +549,19 @@
 				834E73591F90B0F000588E6E /* ARCoreFoundation */,
 				834E73611F90B0F000588E6E /* ARCoreFoundationTests */,
 				836695691F9451FC00069CB7 /* JSONTools */,
+				833EFA511FAA1E14003ABD5E /* ClangFormat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		833EFA501FAA1E14003ABD5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		834E732E1F90B0C000588E6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,6 +602,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		833EFA4E1FAA1E14003ABD5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833EFA591FAA1E15003ABD5E /* SourceEditorExtension.m in Sources */,
+				833EFA5C1FAA1E15003ABD5E /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		834E732C1F90B0C000588E6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -572,6 +661,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		833EFA5F1FAA1E15003ABD5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 833EFA511FAA1E14003ABD5E /* ClangFormat */;
+			targetProxy = 833EFA5E1FAA1E15003ABD5E /* PBXContainerItemProxy */;
+		};
 		834E73481F90B0C100588E6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 834E732F1F90B0C000588E6E /* ARToolChain */;
@@ -606,6 +700,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		833EFA611FAA1E15003ABD5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_ENTITLEMENTS = ClangFormat/ClangFormat.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FTT3LLT53L;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = ClangFormat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = arida.com.ARToolChain.ClangFormat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		833EFA621FAA1E15003ABD5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_ENTITLEMENTS = ClangFormat/ClangFormat.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FTT3LLT53L;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = ClangFormat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = arida.com.ARToolChain.ClangFormat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		834E734D1F90B0C100588E6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -890,6 +1020,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		833EFA631FAA1E15003ABD5E /* Build configuration list for PBXNativeTarget "ClangFormat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				833EFA611FAA1E15003ABD5E /* Debug */,
+				833EFA621FAA1E15003ABD5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		834E732B1F90B0C000588E6E /* Build configuration list for PBXProject "ARToolChain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
